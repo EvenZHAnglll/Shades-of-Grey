@@ -26,6 +26,8 @@ for (float y = -HALF_KERNEL_SIZE; y <= HALF_KERNEL_SIZE; y++)
         }
     }
 }
+
 LaplacianFilter_Normal /= CenterWeight;
 LaplacianFilter_Depth /= CenterWeight;
+
 return float4(LaplacianFilter_Normal, LaplacianFilter_Depth);
